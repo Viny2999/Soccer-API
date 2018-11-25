@@ -1,0 +1,8 @@
+{
+  "localhost": {
+    "url": "mongodb://admin:admin@localhost:27017/soccer-db"
+  },
+  "mlab": {
+    "url": "mongodb://admin:admin100@ds149278.mlab.com:49278/soccer-db"
+  }
+}
