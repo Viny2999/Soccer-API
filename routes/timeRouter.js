@@ -12,6 +12,6 @@ router.post('/api/time', timeService.postTime);
 
 router.put('/api/time/:id', timeService.putTime);
 
-router.delete('/api/time/:id', timeService.deleteTime);
+router.delete('/api/time/?', timeService.deleteTime);
 
 module.exports = router;

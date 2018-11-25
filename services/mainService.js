@@ -6,10 +6,10 @@ exports.getMain = (req, res) => {
         { 
           getAllTime: 'https://soccer-api.herokuapp.com/api/time/all',
           getOneTimePerID: 'https://soccer-api.herokuapp.com/api/time/<ID>',
-          getOneTimePerName: 'https://soccer-api.herokuapp.com/api/time/?name=<NAME>',
+          getOneTimePerName: 'https://soccer-api.herokuapp.com/api/time/?nome=<NAME>',
           postTime: 'https://soccer-api.herokuapp.com/api/time/',
           putTime: 'https://soccer-api.herokuapp.com/api/time/<ID>',
-          deleteTime: 'https://soccer-api.herokuapp.com/api/time/<ID>'
+          deleteTime: 'https://soccer-api.herokuapp.com/api/time/?nome=<NAME>'
         },
         { 
           getAllPlacar: 'https://soccer-api.herokuapp.com/api/placar/all',
