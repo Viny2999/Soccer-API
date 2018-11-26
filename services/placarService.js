@@ -17,21 +17,12 @@ exports.getOnePlacarId = (req, res) => {
   })
 }
 
-exports.getOnePlacarQueryString = (req, res) => { 
-  const name = req.query.name;
-  Placar.find({ name: name} ).then(response => {
-    res.send(response);
-  }).catch(err => {
-    res.status(500).send({ error: err.message });
-  });
-}
-
 exports.postPlacar = (req, res) => { 
   const newPlacar = new Placar({ 
     timeA: req.body.timeA, 
     timeB: req.body.timeB, 
     placarA: req.body.placarA, 
-    placarB: req.body.population
+    placarB: req.body.placarB
   });
   newPlacar.save().then(response => {
     res.send(newPlacar);

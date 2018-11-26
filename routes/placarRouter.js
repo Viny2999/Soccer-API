@@ -6,8 +6,6 @@ router.get('/api/placar/all', placarService.getAllPlacar);
 
 router.get('/api/placar/:id', placarService.getOnePlacarId);
 
-router.get('/api/placar', placarService.getOnePlacarQueryString);
-
 router.post('/api/placar', placarService.postPlacar);
 
 router.put('/api/placar/:id', placarService.putPlacar);

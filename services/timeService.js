@@ -45,7 +45,15 @@ exports.putTime = (req, res) => {
   });
 }
 
-exports.deleteTime = (req, res) => {
+exports.deleteTimePerID = (req, res) => {
+  Time.deleteOne({ _id: req.params.id }).then(response => {
+    res.send({success: true});
+  }).catch(err => {
+      res.status(500).send({ error: err.message });
+    });
+}
+
+exports.deleteTimeQueryString = (req, res) => {
   const nome = req.query.nome;
   Time.deleteOne({ nome: nome }).then(response => {
     res.send({success: true});
