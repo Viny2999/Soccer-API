@@ -18,6 +18,15 @@ exports.getOnePlacarId = (req, res) => {
 }
 
 exports.postPlacar = (req, res) => { 
+
+  if (req.body.placarA == undefined) {
+    req.body.placarA = '0';
+  }
+
+  if (req.body.placarB == undefined) {
+    req.body.placarB = '0';
+  }
+
   const newPlacar = new Placar({ 
     timeA: req.body.timeA, 
     timeB: req.body.timeB, 
