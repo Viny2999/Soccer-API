@@ -1,5 +1,5 @@
 {
-  "localhost": {
+  "local": {
     "url": "mongodb://localhost:27017/soccer-db"
   },
   "mlab": {

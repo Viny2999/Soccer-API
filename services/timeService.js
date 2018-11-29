@@ -28,7 +28,8 @@ exports.getOneTimeQueryString = (req, res) => {
 
 exports.postTime = (req, res) => { 
   const newTime = new Time({ 
-    nome: req.body.nome
+    nome: req.body.nome,
+    mini: req.body.mini
   });
   newTime.save().then(response => {
     res.send(newTime);

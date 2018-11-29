@@ -29,7 +29,9 @@ exports.postPlacar = (req, res) => {
 
   const newPlacar = new Placar({ 
     timeA: req.body.timeA, 
-    timeB: req.body.timeB, 
+    timeB: req.body.timeB,
+    miniA: req.body.miniA, 
+    miniB: req.body.miniB, 
     placarA: req.body.placarA, 
     placarB: req.body.placarB
   });
