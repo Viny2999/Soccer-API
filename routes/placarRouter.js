@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 const placarService = require('../services/placarService');
 
-router.get('/api/placar/all', placarService.getAllPlacar);
+router.get('/api/placar', placarService.getAllPlacar);
 
 router.get('/api/placar/:id', placarService.getOnePlacarId);
 

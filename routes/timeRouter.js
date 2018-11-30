@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 const timeService = require('../services/timeService');
 
-router.get('/api/time/all', timeService.getAllTime);
+router.get('/api/time', timeService.getAllTime);
 
 router.get('/api/time/:id', timeService.getOneTimeId);
 
