@@ -4,20 +4,20 @@ exports.getMain = (req, res) => {
       createIn: '25-11-2018', 
       endpoints: [
         { 
-          getAllTime: 'https://soccer-devmedia.herokuapp.com/api/time/all',
-          getOneTimePerID: 'https://soccer-devmedia.herokuapp.com/api/time/<ID>',
-          getOneTimePerName: 'https://soccer-devmedia.herokuapp.com/api/time/?nome=<NAME>',
-          postTime: 'https://soccer-devmedia.herokuapp.com/api/time/',
-          putTime: 'https://soccer-devmedia.herokuapp.com/api/time/<ID>',
-          deleteTime: 'https://soccer-devmedia.herokuapp.com/api/time/?nome=<NAME>'
+          GET_TIME: 'https://soccer-devmedia.herokuapp.com/api/time',
+          GET_TIME_ID: 'https://soccer-devmedia.herokuapp.com/api/time/<ID>',
+          GET_TIME_QUERY_STRING: 'https://soccer-devmedia.herokuapp.com/api/time/?nome=<NAME>',
+          POST_TIME: 'https://soccer-devmedia.herokuapp.com/api/time',
+          PUT_TIME: 'https://soccer-devmedia.herokuapp.com/api/time/<ID>',
+          DELETE_TIME: 'https://soccer-devmedia.herokuapp.com/api/time/<ID>'
         },
         { 
-          getAllPlacar: 'https://soccer-devmedia.herokuapp.com/api/placar/all',
-          getOnePlacarPerID: 'https://soccer-devmedia.herokuapp.com/api/placar/<ID>',
-          getOnePlacarPerName: 'https://soccer-devmedia.herokuapp.com/api/placar/?name=<NAME>',
-          postPlacar: 'https://soccer-devmedia.herokuapp.com/api/placar/',
-          putPlacar: 'https://soccer-devmedia.herokuapp.com/api/placar/<ID>',
-          deletePlacar: 'https://soccer-devmedia.herokuapp.com/api/placar/<ID>'
+          GET_PLACAR: 'https://soccer-devmedia.herokuapp.com/api/placar',
+          GET_PLACAR_ID: 'https://soccer-devmedia.herokuapp.com/api/placar/<ID>',
+          GET_PLACAR_QUERY_STRING: 'https://soccer-devmedia.herokuapp.com/api/placar/?nome=<NAME>',
+          POST_PLACAR: 'https://soccer-devmedia.herokuapp.com/api/placar',
+          PUT_PLACAR: 'https://soccer-devmedia.herokuapp.com/api/placar/<ID>',
+          DELETE_PLACAR: 'https://soccer-devmedia.herokuapp.com/api/placar/<ID>'
         }
       ]
     });
